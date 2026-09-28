@@ -4,7 +4,10 @@ public class Ejemplo {
 
      void main() {
 
-        String nombre = "Angel";
+        //Aqui podemos poner funciones que llamaremos despés
+        //Variables de la clase
+
+        String nombre = "AngelCano";
         IO.println(nombre);
 
 
