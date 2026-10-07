@@ -10,19 +10,24 @@ public class TareaScanner {
     Scanner sc =new Scanner(System.in);
     
 
-    IO.println("Dime tu nombre ");
-    nombre = sc.nextLine();
-    IO.println("Dime tu apellido ");
-    apellido = sc.nextLine();
-    IO.println("Dime tu direccion");
-    direccion = sc.nextLine();
-    IO.println("Dime tu edad");
-    edad = sc.nextInt();
+
+    nombre = IO.readln("Dime tu nombre ");
+    apellido = IO.readln("Dime tu apellido ");
+    direccion = IO.readln("Dime tu direccion");
+   
+    edad = Integer.parseInt( IO.readln("Dime tu edad"));
     sc.nextLine();//el salto de linea
-    IO.println("Dime tu número de teléfono");
-    numTelefono = sc.nextLine();
-    IO.println("Dime tu codigo postal");
-    codigoPostal = sc.nextLine();
+    numTelefono = IO.readln("Dime tu número de teléfono");
+    codigoPostal = IO.readln("Dime tu codigo postal");
+    
+
+    IO.println("----------------------------------------------");
+    IO.println("Nombre =" + nombre);
+    IO.println("Apellido =" + apellido);
+    IO.println("Dirección =" + direccion);
+    IO.println("Edad = " + edad);
+    IO.println("Número de teléfono = " + numTelefono);
+    IO.println("Código Postal = " + codigoPostal);
 
 
 
