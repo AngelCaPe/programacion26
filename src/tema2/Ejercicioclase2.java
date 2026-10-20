@@ -19,16 +19,24 @@ public class Ejercicioclase2 {
             Y muestra un mensaje con la acción que se produce.
 
         */
-
+       int vida = 100;
+       boolean escudo = true;
        int dado = (int) (Math.random() * (20 - 1 + 1)) + 1;
        IO.println("Tu sacada del dado es = "+ dado);
 
        if (dado ==1){
+           vida = 0;
            IO.println("Pifia, tropieza y pierde el combate");
        } else if (dado >=2 && dado<=5 ) {
+           vida -= 50;
            IO.println("Huyes despavorido");
        } else if (dado > 5 && dado<=10) {
-           IO.println("Te cubres con el escudo");
+           if (escudo) {
+               IO.println("Te cubres con el escudo");
+           }else{
+               vida -=70;
+               IO.println("Recibes golpe por no llevar escudo");
+           }
        } else if (dado>10 && dado<=15) {
            IO.println("Ataque normal con la espada");
        } else if (dado>16 && dado<=19) {
@@ -37,5 +45,6 @@ public class Ejercicioclase2 {
         IO.println("Golpe critico, el orco es fulminado");
 
        }
+       IO.println("La vida restante del jugador es = " + vida);
    }
 }
