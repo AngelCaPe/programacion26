@@ -26,15 +26,14 @@ public class EjercicioSwitchDias {
         DiasSemana diasSemana;
 
         IO.println("Dime el dia de la Semana ");
-
         String dia = IO.readln();
         diasSemana = DiasSemana.valueOf(dia.toUpperCase());
 
 
         switch (diasSemana){
             case LUNES,MARTES,MIERCOLES,JUEVES -> IO.println("Hoy tienes programación con Javi");
-            case  VIERNES -> IO.println("Hoy no tienes programacion con Javi");
-
+            case  VIERNES-> IO.println("Hoy no tienes programacion con Javi");
+            case SABADO,DOMINGO -> IO.println("No tienes clase");
 
 
         }
