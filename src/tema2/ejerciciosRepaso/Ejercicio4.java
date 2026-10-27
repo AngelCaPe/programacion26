@@ -8,7 +8,7 @@ public class Ejercicio4 {
         num2 = Integer.parseInt(IO.readln("Dime el exponente "));
 
         if (num2 >=1){
-            IO.println(num1 + "elevado " + num2 + "=" + (Math.pow(num1,num2)) );
+            IO.println(num1 + "elevado" + num2 + "=" + (Math.pow(num1,num2)) );
         } else if (num2 == 0 ) {
             IO.println("El resultado es 1");
 
