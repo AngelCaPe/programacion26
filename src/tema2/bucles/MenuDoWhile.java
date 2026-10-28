@@ -17,8 +17,12 @@ public class MenuDoWhile {
                 case 1 -> IO.println("Tu saldo es de " + saldo + " euros.");
                 case 2 -> {
                     ingreso = Double.parseDouble(IO.readln("Dime cuanto quieres ingresar"));
-                    saldo = saldo + ingreso;
+                    if (ingreso > 0) {
+                        saldo = saldo + ingreso;
+                    }else {
+                        IO.println("Cantidad de ingreso erroneo");
 
+                    }
                 }
                 case 3 ->{
                     IO.println("Hola que tal todo,¿Mi dinero esta creciendo?");
