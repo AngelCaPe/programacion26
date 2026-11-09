@@ -20,12 +20,12 @@ public class MenuHoraMyS {
                     horas = Integer.parseInt(IO.readln("Dime el numero de horas : "));
                     minutos = Integer.parseInt(IO.readln("Dime el numero de minutos : "));
                     segundos = Integer.parseInt(IO.readln("Dime el numero de segundos : "));
-                    totalSegundos = horas * 120 + minutos * 60 + segundos;
+                    totalSegundos = horas * 3600 + minutos * 60 + segundos;
                     IO.println("Ese tiempo son = " +totalSegundos);
 
                 }
                 case 2 ->{
-                    totalSegundos= Integer.parseInt(IO.readln("Dime los segundos"));
+                    totalSegundos= Integer.parseInt(IO.readln("Dime los segundos: "));
                     horas = totalSegundos / 60 / 60;
                     minutos = totalSegundos / 60 % 60;
                     segundos = totalSegundos % 60 % 60;
