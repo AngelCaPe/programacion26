@@ -8,13 +8,17 @@ public class EjercicioMetodos2 {
      * 3. Es primo.
      * 4.Mostar tabla de multiplicar.
      * 5.Salir
+     * 6.
+     * 7.Salir
      */
     public static void pintarOpciones(){
         IO.println("1.Es par");
         IO.println("2. Máximo de tres números.");
         IO.println("3.Es primo");
         IO.println("4.Mostar tabla de multiplicar");
-        IO.println("5.Salir");
+        IO.println("5.Factorial de un numero");
+        IO.println("6.Impares en intervalo");
+        IO.println("7.Salir");
     }
     public static boolean esPar(int num){
 
@@ -47,6 +51,12 @@ public class EjercicioMetodos2 {
 
         }
         return esPrimo;
+    }
+    static double factorial(int num){
+        double acumulador = 1;
+        for (int i=num;i>1;i--){
+            acumulador= acumulador * i;
+        }return acumulador;
     }
 
 
@@ -90,14 +100,26 @@ public class EjercicioMetodos2 {
                     numero = Integer.parseInt(IO.readln("Dime un numero "));
                     tablaMultiplicar(numero);
                 }
+                case 5-> {
+                    IO.println("---Factorial----");
+                    double resultado =0;
+                    numero = Integer.parseInt(IO.readln("Dime un numero"));
+                    resultado = factorial(numero);
+                    IO.println("El factorial de " + numero + "es = " + resultado);
 
+                }
+                case 6->{
 
-                case 5 -> {
-                    IO.println("Hasta pronto");
                 }
 
+
+                case 7-> {
+                    IO.println("Hasta pronto");
+                }
+                default -> IO.println("Opcion incorrecta");
+
             }
-        }while (opción != 5) ;
+        }while (opción != 7) ;
 
         }
     }
