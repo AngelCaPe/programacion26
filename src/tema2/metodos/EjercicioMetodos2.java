@@ -58,6 +58,21 @@ public class EjercicioMetodos2 {
             acumulador= acumulador * i;
         }return acumulador;
     }
+    static void intervaloImpares(int n, int m){
+        int temp;
+        if (n>m){
+            temp=n;
+            n=m;
+            m=temp;
+        }
+        for (int i = n;i<=m;i++){
+            if (i%2!=0){
+                IO.print(i + ", ");
+                IO.println();
+            }
+        }
+    }
+
 
 
 
@@ -68,10 +83,11 @@ public class EjercicioMetodos2 {
 
         do {
             pintarOpciones();
+
             opción = Integer.parseInt(IO.readln("Dime una opción: "));
             switch (opción) {
                 case 1 -> {
-                    numero = Integer.parseInt(IO.readln("Dime un numero"));
+                    numero = Integer.parseInt(IO.readln("Dime un numero "));
                     if (esPar(numero)) {
                         IO.println("El numero " + numero + " es par ");
                     } else {
@@ -109,6 +125,11 @@ public class EjercicioMetodos2 {
 
                 }
                 case 6->{
+                    int numero1=0 ,numero2=0;
+                    numero1=Integer.parseInt(IO.readln("Dime el numero 1 "));
+                    numero2=Integer.parseInt(IO.readln("Dime el numero 2 "));
+                    intervaloImpares(numero1,numero2);
+
 
                 }
 
