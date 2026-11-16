@@ -79,13 +79,13 @@ public class EjercicioMetodos2 {
 
 
     static void main(String[] args) {
-        int opción = 0, numero = 0;
+        int opcion = 0, numero = 0;
 
         do {
             pintarOpciones();
 
-            opción = Integer.parseInt(IO.readln("Dime una opción: "));
-            switch (opción) {
+            opcion = Integer.parseInt(IO.readln("Dime una opcion: "));
+            switch (opcion) {
                 case 1 -> {
                     numero = Integer.parseInt(IO.readln("Dime un numero "));
                     if (esPar(numero)) {
@@ -140,7 +140,7 @@ public class EjercicioMetodos2 {
                 default -> IO.println("Opcion incorrecta");
 
             }
-        }while (opción != 7) ;
+        }while (opcion != 7) ;
 
         }
     }
