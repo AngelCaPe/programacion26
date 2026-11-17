@@ -36,9 +36,9 @@ Humerus. El ganador es el que ha obtenido más puntos.
             IO.println("-------------------------------------------------------------------------------------");
         }
         if (puntosCubitus<puntosHumerus){
-            IO.println("Gana Humerus");
+            IO.println("Gana Humerus.");
         } else if (puntosCubitus>puntosHumerus) {
-            IO.println("Gana Cubitus");
+            IO.println("Gana Cubitus.");
 
         }else{
             IO.println("Hay un empate");
