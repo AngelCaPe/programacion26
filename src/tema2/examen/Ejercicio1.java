@@ -58,7 +58,7 @@ public class Ejercicio1 {
                     }
                     horasFuera= horasFuera(tempFinal);
                     IO.println("La hora " + i );
-                    IO.println("La Temperatura es de: " + tempInicial + "ºC");
+                    IO.println("La Temperatura es de: " + tempFinal + "ºC");
                     if (ventilacion){
                         IO.println("La ventilacion esta puesta ");
                     }
